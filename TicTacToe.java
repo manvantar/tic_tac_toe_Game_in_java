@@ -27,7 +27,14 @@ public class TicTacToe {
 	static void showBroad(char in[]){
 		int s=in.length;
 		for (int i = 1; i < in.length; i++) {
+			if(i==1 || i==4 || i==7) {
+				System.out.print("|");
+			}
 			System.out.print(in[i]+" ");
+			if(i==3 || i==6 || i==9) {
+				System.out.print("|");
+			}
+
 			if (i==3 || i==6) {
 				System.out.println();
 			}
